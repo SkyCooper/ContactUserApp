@@ -1,8 +1,20 @@
 import React from 'react'
 
-const List = () => {
+const List = ({contacts}) => {
   return (
-    <div>List</div>
+    <div>
+      <input type="text" placeholder='Filter contact' />
+      <ul>
+        {
+          contacts.map((contact, index)=>{
+            return(
+              <li key={index}>{contact.fullname}</li>
+
+            )
+          })
+        }
+      </ul>
+    </div>
   )
 }
 
