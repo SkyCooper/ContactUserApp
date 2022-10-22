@@ -10,7 +10,7 @@ const [contacts, setContacts] = useState([
   },
   {
     fullname: "Sky",
-    phoneNumber: 532 - 5443223232,
+    phoneNumber: 216 - 5443223232,
   },
 ]);
 
