@@ -4,7 +4,7 @@
 
 ## Visualization of the Website
 
-![Form](./contacts.gif)
+![Form](./coctacts.gif)
 
 ## Description
 
