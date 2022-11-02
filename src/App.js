@@ -1,10 +1,12 @@
 import Contacts from "./components/contacts/Contacts";
-
+import "./App.css";
 
 const App = () => {
-  return(
-    <Contacts/>
+  return (
+    <div className="App">
+      <Contacts />
+    </div>
   );
-}
+};
 
-export default App
+export default App;

@@ -1,0 +1,61 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 400px;
+  background-color: antiquewhite;
+  padding: 20px;
+  border-radius: 15px;
+  border: 3px solid black;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 15px;
+}
+
+li {
+  list-style-type: none;
+  padding: 15px 25px;
+  background-color: rgb(225, 229, 157);
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 15px;
+  border: 1px soldi black;
+}
+
+.list {
+  margin: 15px;
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: end;
+  margin-top: 10px;
+}
+
+button {
+  padding: 8px 25px;
+  border-radius: 10px;
+  background-color: rgb(245, 231, 124);
+  transition: all 0.5s;
+}
+
+button:active{
+  transform: scale(0.95);
+  background-color: rgb(183, 162, 5);
+}
+
+.title{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 25px;
+  margin-top: 15px;
+}

@@ -13,8 +13,11 @@ const Form = ({ setContacts, contacts }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(form);
-    (form.fullname === "" || form.phoneNumber === "") &&
+    if(form.fullname === "" || form.phoneNumber === "") {
       alert("Enter your info");
+      return false
+    }
+      
     setContacts([...contacts, form]);
     console.log(form);
 
@@ -50,7 +53,7 @@ const Form = ({ setContacts, contacts }) => {
           onChange={inputChange}
         />
       </div>
-      <div>
+      <div className="btnContainer">
         <button>Add</button>
       </div>
     </form>

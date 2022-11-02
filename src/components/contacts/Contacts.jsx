@@ -5,12 +5,24 @@ import List from '../list/List'
 const Contacts = () => {
 const [contacts, setContacts] = useState([
   {
-    fullname: "Cooper",
-    phoneNumber: 532 - 5443223232,
+    fullname: "Cooper SKY",
+    phoneNumber: "90 533 4441212",
   },
   {
-    fullname: "Sky",
-    phoneNumber: 216 - 5443223232,
+    fullname: "Gehad SAMY",
+    phoneNumber: "44 166 122345",
+  },
+  {
+    fullname: "Gerard PIQUE",
+    phoneNumber: "90 153 123345",
+  },
+  {
+    fullname: "Noah ADAMS",
+    phoneNumber: "90 44 123445",
+  },
+  {
+    fullname: "Felix FRANCO",
+    phoneNumber: "90 533 4441213",
   },
 ]);
 
@@ -21,9 +33,10 @@ useEffect(() => {
 
 
   return (
-    <div>
-      <List contacts = {contacts} />
+    <div className='container'>
+      <h1>Contacts ☎</h1>
       <Form setContacts={setContacts} contacts={contacts} />
+      <List contacts = {contacts} />
     </div>
   );
 }
